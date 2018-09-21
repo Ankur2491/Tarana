@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <!-- <div *ngFor="let ro of radioObject" class="col-md-4">
+<table border="1px solid black">
+  <tr>
+    <td>
+      <label>{{ro["name"]}}</label>
+      <audio controls>
+        <source src="{{ro.url}}" type="audio/mpeg">
+      </audio>
+    </td>
+  </tr>
+</table>
+</div> -->
+    <div *ngFor="let ro of radioObject" class="col-lg-4">
+      <div>
+        <div class="card-header">
+          <div class="row">
+            <p>{{ro["name"]}}</p>
+          </div>
+        </div>
+        <div class="card-footer container-fluid">
+          <audio controls>
+            <source src="{{ro.url}}" type="audio/mpeg">
+          </audio>
+        </div>
+        <hr />
+      </div>
+    </div>
+  </div>
+</div>
