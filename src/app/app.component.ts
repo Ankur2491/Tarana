@@ -1,12 +1,17 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { DataService } from './data.service';
+import { PlayComponent } from './play/play.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent{
+  @ViewChild(PlayComponent) playref;
   title = 'tarana';
+  loadComponent: boolean;
+  url: string;
+  constructor(private data: DataService){}
   radioObject = [
     {
       "name": "Vybez station",
@@ -61,6 +66,16 @@ export class AppComponent {
       "url": "http://208.115.222.203:9998/;"
     }
   ];
-  
 
+  changeUrl(str){
+    if(this.loadComponent){
+    this.loadComponent = false;
+    this.data.changeTheUrl(str);
+  }
+  else{
+    this.data.changeTheUrl(str);
+    this.loadComponent = true;
+  }
+}
+  
 }

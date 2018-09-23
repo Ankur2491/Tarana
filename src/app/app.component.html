@@ -16,16 +16,15 @@
       <div>
         <div class="card-header">
           <div class="row">
-            <p>{{ro["name"]}}</p>
+            <button class="btn" (click)="changeUrl(ro.name)">{{ro["name"]}}</button>
           </div>
         </div>
-        <div class="card-footer container-fluid">
-          <audio controls>
-            <source src="{{ro.url}}" type="audio/mpeg">
-          </audio>
-        </div>
-        <hr />
       </div>
     </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="container-fluid">
+     <app-play *ngIf="loadComponent"></app-play>
   </div>
 </div>
