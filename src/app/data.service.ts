@@ -65,6 +65,30 @@ export class DataService {
     "City 1016": "http://19393.live.streamtheworld.com:3690/ARNCITYAAC_SC?DIST=TuneIn&TGT=TuneIn&maxServers=2&gender=m&ua=RadioTime&ttag=RadioTime"
     ,
     "Evergreen Hits": "http://192.240.102.133:11454/stream"
+    ,
+    "Hot 89.9": "http://newcap.leanstream.co/CIHTFM?args=tunein_02"
+    ,
+    "Go 96.3": "http://18863.live.streamtheworld.com:3690/KTWNFM_SC?DIST=TuneIn&TGT=TuneIn&maxServers=2&gender=m&ua=RadioTime&ttag=RadioTime"
+    ,
+    "Hits 99.9": "http://17263.live.streamtheworld.com:3690/KIOAHD2_SC?DIST=TuneIn&TGT=TuneIn&maxServers=2&tdtok=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImtpZCI6ImZTeXA4In0.eyJpc3MiOiJ0aXNydiIsInN1YiI6I"
+    ,
+    "Hot 97.7": "http://192.211.51.158:5353/stream"
+    ,
+    "Radio New York Live": "https://streaming.radiostreamlive.com/radionylive_devices"
+    ,
+    "Radio City Ghazals": "http://prclive1.listenon.in:8860/"
+    ,
+    "Calm Radio": "http://streams.calmradio.com/api/295/128/stream"
+    ,
+    "Indian Link": "http://50.7.70.58:8819/;"
+    ,
+    "Punjab Rocks Radio": "http://192.151.153.234:9988/;"
+    ,
+    "BBC Radio 1": "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1_mf_p?s=1537811543&e=1537825943&h=8bb6982447152d93034e47cfae54e7d1"
+    ,
+    "NDTV India": "http://stream1.ndtv.com:8080/on-ndtvindia"
+    ,
+    "BBC News": "http://ice66.securenetsystems.net/SPRLIVE"
   }
     ;
 

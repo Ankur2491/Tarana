@@ -121,6 +121,54 @@ export class AppComponent implements OnInit{
     {
       "name": "RadioCity",
       "url": "http://prclive1.listenon.in:9960/"
+    },
+    {
+      "name": "Hot 89.9",
+      "url": "http://newcap.leanstream.co/CIHTFM?args=tunein_02"
+    },
+    {
+      "name": "Go 96.3",
+      "url": "http://18863.live.streamtheworld.com:3690/KTWNFM_SC?DIST=TuneIn&TGT=TuneIn&maxServers=2&gender=m&ua=RadioTime&ttag=RadioTime"
+    },
+    {
+      "name": "Hits 99.9",
+      "url": "http://17263.live.streamtheworld.com:3690/KIOAHD2_SC?DIST=TuneIn&TGT=TuneIn&maxServers=2&tdtok=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImtpZCI6ImZTeXA4In0.eyJpc3MiOiJ0aXNydiIsInN1YiI6I"
+    },
+    {
+      "name": "Hot 97.7",
+      "url": "http://192.211.51.158:5353/stream"
+    },
+    {
+      "name": "Radio New York Live",
+      "url": "https://streaming.radiostreamlive.com/radionylive_devices"
+    },
+    {
+      "name": "Radio City Ghazals",
+      "url": "http://prclive1.listenon.in:8860/"
+    },
+    {
+      "name": "Calm Radio",
+      "url": "http://streams.calmradio.com/api/295/128/stream"
+    },
+    {
+      "name": "Indian Link",
+      "url": "http://50.7.70.58:8819/;"
+    },
+    {
+      "name": "Punjab Rocks Radio",
+      "url": "http://192.151.153.234:9988/;"
+    },
+    {
+      "name": "BBC Radio 1",
+      "url": "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1_mf_p?s=1537811543&e=1537825943&h=8bb6982447152d93034e47cfae54e7d1"
+    },
+    {
+      "name": "NDTV India",
+      "url": "http://stream1.ndtv.com:8080/on-ndtvindia"
+    },
+    {
+      "name": "BBC News",
+      "url": "http://ice66.securenetsystems.net/SPRLIVE"
     }
   ];
 
