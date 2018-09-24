@@ -26,6 +26,55 @@ export class AppComponent implements OnInit{
       "url": "http://us2.internet-radio.com:8281/live"
     },
     {
+      "name": "Pakfunchat Radio",
+      "url": "http://149.56.147.197:8226/"
+    },
+    {
+      "name": "JOSH FM",
+      "url": "http://stream.zenolive.com/cm1fkgbv1ceuv"
+    },
+    {
+      "name": "Radio City Bollywood Mix",
+      "url":  "http://prclive1.listenon.in:9928/"
+    },
+    {
+      "name": "Kishore Kumar",
+      "url": "http://prclive1.listenon.in:8834/"
+    },
+    {
+      "name": "Mirchi",
+      "url": "http://peridot.streamguys.com:7150/Mirchi"
+    },
+    {
+      "name": "Tune India Radio(Australia)",
+      "url": "http://s2.radio.co/se5e166e2f/listen"
+    },
+    {
+      "name": "Radio HSL",
+      "url": "http://50.7.68.251:7064/stream"
+    },
+    {
+      "name": "Radio City Indipop",
+      "url": "http://prclive1.listenon.in:9910/"
+    },
+    {
+      "name": "Suno 1024",
+      "url": "http://50.7.71.27:9693/;"
+    },
+    {
+      "name": "Radio Dil",
+      "url": "http://50.22.253.45/radiodil"
+    },
+    {
+      "name": "City 1016",
+      "url": "http://19393.live.streamtheworld.com:3690/ARNCITYAAC_SC?DIST=TuneIn&TGT=TuneIn&maxServers=2&gender=m&ua=RadioTime&ttag=RadioTime"
+    },
+    {
+      "name": "Evergreen Hits",
+      "url": "http://192.240.102.133:11454/stream"
+    },
+
+    {
       "name": "Radio Retro",
       "url": "http://64.71.79.181:5124/;stream/1"
     },
@@ -36,10 +85,6 @@ export class AppComponent implements OnInit{
     {
       "name": "Non Stop Hindi",
       "url": "http://198.178.123.14:8216/;stream/1"
-    },
-    {
-      "name": "Kishore Kumar",
-      "url": "http://prclive1.listenon.in:8834/"
     },
     {
       "name": "Shripad Radio",
@@ -75,7 +120,7 @@ export class AppComponent implements OnInit{
     },
     {
       "name": "RadioCity",
-      "url": "http://208.115.222.203:9998/;"
+      "url": "http://prclive1.listenon.in:9960/"
     }
   ];
 
