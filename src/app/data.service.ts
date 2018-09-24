@@ -41,9 +41,35 @@ export class DataService {
     
       "DesiZone Radio": "http://www.desizone.nl:8000/;"
     ,
-      "RadioCity": "http://208.115.222.203:9998/;"
+      "RadioCity": "http://prclive1.listenon.in:9960/"
+    ,
+      "Pakfunchat Radio": "http://149.56.147.197:8226/"
+    ,
+      "JOSH FM": "http://stream.zenolive.com/cm1fkgbv1ceuv"
+    ,
+      "Radio City Bollywood Mix": "http://prclive1.listenon.in:9928/"
+    ,
+      "Kishore Kumar": "http://prclive1.listenon.in:8834/"
+    ,
+      "Mirchi": "http://peridot.streamguys.com:7150/Mirchi"
+    ,
+      "Tune India Radio(Australia)": "http://s2.radio.co/se5e166e2f/listen"
+    ,
+      "Radio HSL": "http://50.7.68.251:7064/stream"
+    ,
+      "Radio City Indipop": "http://prclive1.listenon.in:9910/"
+    ,
+      "Suno 1024": "http://50.7.71.27:9693/;"
+    ,
+      "Radio Dil": "http://50.22.253.45/radiodil"
+    ,
+      "City 1016": "http://19393.live.streamtheworld.com:3690/ARNCITYAAC_SC?DIST=TuneIn&TGT=TuneIn&maxServers=2&gender=m&ua=RadioTime&ttag=RadioTime"
+    ,
+      "Evergreen Hits": "http://192.240.102.133:11454/stream"
     }
   ;
+  private nameSource = new BehaviorSubject('');
+  currentName = this.nameSource.asObservable();
 
   constructor() { }
   changeTheUrl(url: string){
@@ -51,6 +77,7 @@ export class DataService {
     this.urlSource.next(au);
   }
 
-
-
+  changeControl(name: string){
+    this.nameSource.next(name);
+  }
 }

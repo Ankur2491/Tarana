@@ -16,15 +16,18 @@
       <div>
         <div class="card-header">
           <div class="row">
-            <button class="btn" (click)="changeUrl(ro.name)">{{ro["name"]}}</button>
+            <label>{{ro["name"]}}</label>
+            <a *ngIf="pauseMap.showPause !== ro.name" class="btn" (click)="changeUrl(ro.name)"><img src="../assets/images/play.png" width="70%"></a>
+            <a *ngIf="pauseMap.showPause === ro.name" class="btn" (click)="changeUrl(ro.name)"><img src="../assets/images/pause.png" width="70%"></a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+<br/>
 <div class="footer">
   <div class="container-fluid">
-     <app-play *ngIf="loadComponent"></app-play>
-  </div>
+     <!-- <app-play *ngIf="loadComponent" [station]="selectedStation"></app-play> -->
+    </div>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, OnDestroy } from '@angular/core';
 import { DataService } from './data.service';
 import { PlayComponent } from './play/play.component';
 @Component({
@@ -6,11 +6,19 @@ import { PlayComponent } from './play/play.component';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent{
+export class AppComponent implements OnInit{
   @ViewChild(PlayComponent) playref;
   title = 'tarana';
   loadComponent: boolean;
   url: string;
+  audio;
+  showPlay = true;
+  showPause = false;
+  nowPlaying;
+  nameSub;
+  urlSub;
+  pauseMap={"paused":null,"showPause":null};
+  selectedStation: string;
   constructor(private data: DataService){}
   radioObject = [
     {
@@ -28,6 +36,10 @@ export class AppComponent{
     {
       "name": "Non Stop Hindi",
       "url": "http://198.178.123.14:8216/;stream/1"
+    },
+    {
+      "name": "Kishore Kumar",
+      "url": "http://prclive1.listenon.in:8834/"
     },
     {
       "name": "Shripad Radio",
@@ -68,14 +80,35 @@ export class AppComponent{
   ];
 
   changeUrl(str){
-    if(this.loadComponent){
-    this.loadComponent = false;
-    this.data.changeTheUrl(str);
+  if(str == this.nowPlaying && this.pauseMap["paused"] !== str){
+    //console.log("Pausing")
+    this.pauseMap.paused=str;
+    //console.log("PM:",this.pauseMap);
+    this.audio.pause();
+    this.pauseMap.showPause='';
+  }
+  else if(str == this.nowPlaying && this.pauseMap["paused"] === str){
+    //console.log("Playing");
+    this.pauseMap.paused='';
+    this.audio.play();
+    this.pauseMap.showPause=str;
+
   }
   else{
-    this.data.changeTheUrl(str);
-    this.loadComponent = true;
+  //console.log("else");
+  this.data.changeControl(str);
+  this.data.changeTheUrl(str);
+  this.audio.src = this.url;
+  this.audio.load();
+  this.audio.play();
+  this.pauseMap.showPause=str;
   }
+
+}
+ngOnInit(){
+this.audio = new Audio();
+this.nameSub = this.data.currentName.subscribe(name => this.nowPlaying = name);
+this.urlSub = this.data.currentUrl.subscribe(url => this.url = url);
 }
   
 }
