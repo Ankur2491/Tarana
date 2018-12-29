@@ -89,7 +89,39 @@ export class DataService {
     "NDTV India": "http://stream1.ndtv.com:8080/on-ndtvindia"
     ,
     "BBC News": "http://ice66.securenetsystems.net/SPRLIVE"
-  }
+    ,
+    "Bollywood Dil Se": "http://103.16.47.70:7333/;stream.nsv"
+    ,
+    "Love Guru": "https://prclive4.listenon.in/Ishq"
+    ,
+    "90s Bollywood": "http://103.16.47.70:7444/;stream.nsv"
+    ,
+    "Radio Mirchi": "http://peridot.streamguys.com:7150/Mirchi"
+    ,
+    "Red FM": "http://14013.live.streamtheworld.com/CKYRFM_SC"
+    ,
+    "Big FM": "http://sc-bb.1.fm:8017/"
+    ,
+    "Fresh Bollywood": "http://103.16.47.70:7222/;stream.nsv"
+    ,
+    "Mukesh": "http://prclive1.listenon.in:9308/;"
+    ,
+    "Lata Mangeshkar": "http://prclive1.listenon.in:8832/"
+    ,
+    "Mohd. Rafi": "http://prclive1.listenon.in:8814/"
+    ,
+    "FM Gold": "http://51.15.208.163:8081/radio/fmgold/icecast.audio"
+    ,
+    "FM Rainbow": "http://51.15.208.163:8081/radio/fmrainbow/icecast.audio"
+    ,
+    "Vividh Bharti": "http://51.15.208.163:8081/radio/vividhbharati/icecast.audio"
+    ,
+    "Asha": "http://prclive1.listenon.in:8812/;"
+    ,
+    "Talat Mahmood": "http://ec2-34-217-86-229.us-west-2.compute.amazonaws.com:9600/talat.ogg"
+    ,
+    "Ustad Ahmed & Mohammad Hussain": "http://ec2-34-217-86-229.us-west-2.compute.amazonaws.com:9601/hussain.ogg"
+ }
     ;
 
   private nameSource = new BehaviorSubject('');

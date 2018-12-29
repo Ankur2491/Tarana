@@ -22,12 +22,68 @@ export class AppComponent implements OnInit{
   constructor(private data: DataService){}
   radioObject = [
     {
-      "name": "Vybez station",
-      "url": "http://us2.internet-radio.com:8281/live"
+      "name": "Vividh Bharti",
+      "url": "http://51.15.208.163:8081/radio/vividhbharati/icecast.audio"
+    },
+    {  
+      "name": "FM Rainbow",
+      "url": "http://51.15.208.163:8081/radio/fmrainbow/icecast.audio"
     },
     {
-      "name": "Pakfunchat Radio",
-      "url": "http://149.56.147.197:8226/"
+      "name": "FM Gold",
+      "url": "http://51.15.208.163:8081/radio/fmgold/icecast.audio"
+    },
+    {
+      "name": "Mohd. Rafi",
+      "url": "http://prclive1.listenon.in:8814/"
+    },
+    {
+      "name": "Lata Mangeshkar",
+      "url": "http://prclive1.listenon.in:8832/"
+    },
+    {
+      "name": "Asha",
+      "url": "http://prclive1.listenon.in:8812/;"
+    },
+    {
+      "name": "Mukesh",
+      "url": "http://prclive1.listenon.in:9308/;"
+    },
+    {
+      "name": "Talat Mahmood",
+      "url": "http://ec2-34-217-86-229.us-west-2.compute.amazonaws.com:9600/talat.ogg"
+    },
+    {
+      "name": "Ustad Ahmed & Mohammad Hussain",
+      "url" : "http://ec2-34-217-86-229.us-west-2.compute.amazonaws.com:9601/hussain.ogg"
+    },
+    {
+      "name": "Fresh Bollywood",
+      "url": "http://103.16.47.70:7222/;stream.nsv"
+    },
+    {
+      "name": "Big FM",
+      "url": "http://sc-bb.1.fm:8017/"
+    },
+    {
+      "name": "Red FM",
+      "url": "http://14013.live.streamtheworld.com/CKYRFM_SC"
+    },
+    {
+      "name": "Radio Mirchi",
+      "url": "http://peridot.streamguys.com:7150/Mirchi"
+    },
+    {
+      "name": "90s Bollywood",
+      "url": "http://103.16.47.70:7444/;stream.nsv"
+    },
+    {
+      "name": "Love Guru",
+      "url": "https://prclive4.listenon.in/Ishq"
+    },
+    {
+      "name": "Bollywood Dil Se",
+      "url": "http://103.16.47.70:7333/;stream.nsv"
     },
     {
       "name": "JOSH FM",
@@ -69,11 +125,6 @@ export class AppComponent implements OnInit{
       "name": "City 1016",
       "url": "http://19393.live.streamtheworld.com:3690/ARNCITYAAC_SC?DIST=TuneIn&TGT=TuneIn&maxServers=2&gender=m&ua=RadioTime&ttag=RadioTime"
     },
-    {
-      "name": "Evergreen Hits",
-      "url": "http://192.240.102.133:11454/stream"
-    },
-
     {
       "name": "Radio Retro",
       "url": "http://64.71.79.181:5124/;stream/1"
