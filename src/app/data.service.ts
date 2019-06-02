@@ -120,7 +120,9 @@ export class DataService {
     ,
     "Talat Mahmood": "http://ec2-34-217-86-229.us-west-2.compute.amazonaws.com:9600/talat.ogg"
     ,
-    "Ustad Ahmed & Mohammad Hussain": "http://ec2-34-217-86-229.us-west-2.compute.amazonaws.com:9601/hussain.ogg"
+    "Ustad Ahmed & Mohammad Hussain": "http://ec2-34-217-86-229.us-west-2.compute.amazonaws.com:9601/hussain.ogg",
+    
+    "Thumri": "http://ec2-54-244-2-94.us-west-2.compute.amazonaws.com:9600/thumri.ogg"
  }
     ;
 

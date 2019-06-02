@@ -34,6 +34,10 @@ export class AppComponent implements OnInit{
       "url": "http://51.15.208.163:8081/radio/fmgold/icecast.audio"
     },
     {
+      "name": "Thumri",
+      "url": "http://ec2-54-244-2-94.us-west-2.compute.amazonaws.com:9600/thumri.ogg"
+    },
+    {
       "name": "Mohd. Rafi",
       "url": "http://prclive1.listenon.in:8814/"
     },
