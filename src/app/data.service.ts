@@ -25,7 +25,7 @@ export class DataService {
     ,
     "Masala Radio": "http://198.178.123.23:7354/;stream/1"
     ,
-    "Arijit Singh": "http://212.83.138.48:8740/;stream/1"
+    "Arijit Singh": "https://stream.zenolive.com/rfpf8qec94zuv.aac"
     ,
     "AR Rahman": "http://212.83.138.48:8708/;stream/1"
     ,
@@ -112,6 +112,46 @@ export class DataService {
     "Talat Mahmood": "http://ec2-34-217-86-229.us-west-2.compute.amazonaws.com:9600/talat.ogg"
     ,
     "Ustad Ahmed & Mohammad Hussain": "http://ec2-34-217-86-229.us-west-2.compute.amazonaws.com:9601/hussain.ogg"
+    ,
+    "106.2-Big FM": "https://eu1.fastcast4u.com/proxy/dzcwbfih_eu?mp=/1"
+    ,
+    "Radio Umang": "https://streaming.radio.co/s3aaa20a5e/listen"
+    ,
+    "Radio Olive": "https://playerservices.streamtheworld.com/api/livestream-redirect/OLIVE1063.mp3"
+    ,
+    "Ujala Radio": "https://server4.ujala.nl/stream/2/listen.mp3"
+    ,
+    "Radio Namkin": "https://stream.zenolive.com/kgfzrtfbaw5tv.aac"
+    ,
+    "Desi Bollywood": "https://astro4.rastream.com/india"
+    ,
+    "Awaz Fm": "https://node-21.zeno.fm/vbrs8s6zetzuv?rj-ttl=5&rj-tok=AAABc6yrqgkAtI3dZzNfSNXtsg"
+    ,
+    "Bolly bop": "https://stream.radio.co/s2562b6e3a/listen"
+    ,
+    "Tune India Radio": "https://s2.radio.co/se5e166e2f/listen"
+    ,
+    "Radio 90.5": "https://ice42.securenetsystems.net/CR90?type=.mp3"
+    ,
+    "Sayaji Fm": "https://eapps-cs.herokuapp.com/http://comet.shoutca.st:8437/stream"
+    ,
+    "Radio City Hip Hop": "https://prclive4.listenon.in/HipHop"
+    ,
+    "Radio Madhuban": "https://icecast.bkwsu.eu:8443/radiomadhuban.ogg"
+    ,
+    "Hungama Punjabi": "https://radioindia.net/radio/hungamapunjabi/icecast.audio"
+    ,
+    "Virgin Radio": "http://stream.zeno.fm/agtp9c146qzuv"
+    ,
+    "Fox Fm": "http://stream.zeno.fm/vu6rzanzetzuv"
+    ,
+    "Radio City Dance": "https://prclive4.listenon.in/Dance"
+    ,
+    "CNA News Radio": "http://playerservices.streamtheworld.com/api/livestream-redirect/938NOWAAC_SC"
+    ,
+    "VDESI": "https://stream.radio.co/s42e977b6c/listen"
+    ,
+    "FNF Fm": "https://usa1.fastcast4u.com/proxy/qrekthei?mp=/;"
   }
     ;
   private nameSource = new BehaviorSubject('');
