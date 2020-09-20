@@ -39,7 +39,7 @@ export class AppComponent implements OnInit{
     },
     {
       "name": "Mohd. Rafi",
-      "url": "http://prclive1.listenon.in:8814/"
+      "url": "http://stream.zenolive.com/161u376u2gruv"
     },
     {
       "name": "Lata Mangeshkar",
