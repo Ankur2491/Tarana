@@ -37,10 +37,10 @@ export class AppComponent implements OnInit {
     //   "name": "Thumri",
     //   "url": "http://ec2-54-244-2-94.us-west-2.compute.amazonaws.com:9600/thumri.ogg"
     // },
-    // {
-    //   "name": "Mohd. Rafi",
-    //   "url": "http://stream.zenolive.com/161u376u2gruv"
-    // },
+    {
+      "name": "Mohd. Rafi",
+      "url": "http://stream.zenolive.com/161u376u2gruv"
+    },
     // {
     //   "name": "Lata Mangeshkar",
     //   "url": "http://prclive1.listenon.in:8832/"
