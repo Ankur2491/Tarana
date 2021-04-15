@@ -63,6 +63,10 @@ export class AppComponent implements OnInit {
     //   "url" : "http://ec2-34-217-86-229.us-west-2.compute.amazonaws.com:9601/hussain.ogg"
     // },
     {
+      "name": "Hindi Retro",
+      "url": "http://192.111.151.2:5124/stream"
+    },
+    {
       "name": "Fresh Bollywood",
       "url": "http://103.16.47.70:7222/;stream.nsv"
     },

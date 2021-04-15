@@ -102,6 +102,8 @@ export class DataService {
     // "Mohd. Rafi": "http://stream.zenolive.com/161u376u2gruv"
     "Mohd. Rafi":"https://node-19.zeno.fm/2xx62x8ztm0uv.aac"
     ,
+    "Hindi Retro": "http://192.111.151.2:5124/stream"
+    ,
     "FM Gold": "https://onlineradiofm.in/apii.php?url=https://radioindia.net/radio/fm_gold/icecast.audio"
     ,
     "FM Rainbow": "https://onlineradiofm.in/apii.php?url=https://radioindia.net/radio/rainbow_radio/icecast.audio"
