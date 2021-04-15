@@ -39,7 +39,8 @@ export class AppComponent implements OnInit {
     // },
     {
       "name": "Mohd. Rafi",
-      "url": "http://stream.zenolive.com/161u376u2gruv"
+      // "url": "http://stream.zenolive.com/161u376u2gruv"
+      "url": "https://node-19.zeno.fm/2xx62x8ztm0uv.aac"
     },
     // {
     //   "name": "Lata Mangeshkar",

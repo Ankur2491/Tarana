@@ -99,7 +99,8 @@ export class DataService {
     ,
     "Lata Mangeshkar": "http://prclive1.listenon.in:8832/"
     ,
-    "Mohd. Rafi": "http://stream.zenolive.com/161u376u2gruv"
+    // "Mohd. Rafi": "http://stream.zenolive.com/161u376u2gruv"
+    "Mohd. Rafi":"https://node-19.zeno.fm/2xx62x8ztm0uv.aac"
     ,
     "FM Gold": "https://onlineradiofm.in/apii.php?url=https://radioindia.net/radio/fm_gold/icecast.audio"
     ,
