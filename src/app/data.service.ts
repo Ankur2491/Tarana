@@ -39,7 +39,7 @@ export class DataService {
     ,
     "Radio City Bollywood Mix": "http://prclive1.listenon.in:9928/"
     ,
-    "Kishore Kumar": "http://prclive1.listenon.in:8834/"
+    "Kishore Kumar": "https://node-11.zeno.fm/0ghtfp8ztm0uv.aac"
     ,
     "Mirchi": "http://peridot.streamguys.com:7150/Mirchi"
     ,
