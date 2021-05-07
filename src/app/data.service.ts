@@ -97,7 +97,7 @@ export class DataService {
     ,
     "Mukesh": "http://prclive1.listenon.in:9308/;"
     ,
-    "Lata Mangeshkar": "http://prclive1.listenon.in:8832/"
+    "Lata Mangeshkar": "https://node-04.zeno.fm/87xam8pf7tzuv.aac"
     ,
     // "Mohd. Rafi": "http://stream.zenolive.com/161u376u2gruv"
     "Mohd. Rafi":"https://node-19.zeno.fm/2xx62x8ztm0uv.aac"

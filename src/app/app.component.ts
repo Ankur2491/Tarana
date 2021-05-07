@@ -67,6 +67,10 @@ export class AppComponent implements OnInit {
       "url": "https://node-11.zeno.fm/0ghtfp8ztm0uv.aac"
     },
     {
+      "name": "Lata Mangeshkar",
+      "url": "https://node-04.zeno.fm/87xam8pf7tzuv.aac"
+    },
+    {
       "name": "Hindi Retro",
       "url": "http://192.111.151.2:5124/stream"
     },
