@@ -95,12 +95,15 @@ export class DataService {
     ,
     "Fresh Bollywood": "http://103.16.47.70:7222/;stream.nsv"
     ,
-    "Mukesh": "http://prclive1.listenon.in:9308/;"
+    // "Mukesh": "http://prclive1.listenon.in:9308/;"
+    "Mukesh": "http://stream.zeno.fm/am1p4qaxyv8uv"
     ,
     "Lata Mangeshkar": "https://node-04.zeno.fm/87xam8pf7tzuv.aac"
     ,
     // "Mohd. Rafi": "http://stream.zenolive.com/161u376u2gruv"
     "Mohd. Rafi":"https://node-19.zeno.fm/2xx62x8ztm0uv.aac"
+    ,
+    "Hemant Kumar": "http://node-10.zeno.fm/eqz8nh7wyv8uv"
     ,
     "Hindi Retro": "http://192.111.151.2:5124/stream"
     ,
@@ -114,7 +117,8 @@ export class DataService {
     ,
     "Talat Mahmood": "http://ec2-34-217-86-229.us-west-2.compute.amazonaws.com:9600/talat.ogg"
     ,
-    "Ustad Ahmed & Mohammad Hussain": "http://ec2-34-217-86-229.us-west-2.compute.amazonaws.com:9601/hussain.ogg"
+    // "Ustad Ahmed & Mohammad Hussain": "http://ec2-34-217-86-229.us-west-2.compute.amazonaws.com:9601/hussain.ogg"
+    "Ustad Ahmed & Mohammad Hussain": "http://stream.zeno.fm/6u81yk9wyv8uv"
     ,
     "106.2-Big FM": "https://eu1.fastcast4u.com/proxy/dzcwbfih_eu?mp=/1"
     ,

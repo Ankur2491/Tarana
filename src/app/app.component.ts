@@ -50,18 +50,18 @@ export class AppComponent implements OnInit {
     //   "name": "Asha",
     //   "url": "http://prclive1.listenon.in:8812/;"
     // },
-    // {
-    //   "name": "Mukesh",
-    //   "url": "http://prclive1.listenon.in:9308/;"
-    // },
+    {
+      "name": "Mukesh",
+      "url": "http://stream.zeno.fm/am1p4qaxyv8uv"
+    },
     // {
     //   "name": "Talat Mahmood",
     //   "url": "http://ec2-34-217-86-229.us-west-2.compute.amazonaws.com:9600/talat.ogg"
     // },
-    // {
-    //   "name": "Ustad Ahmed & Mohammad Hussain",
-    //   "url" : "http://ec2-34-217-86-229.us-west-2.compute.amazonaws.com:9601/hussain.ogg"
-    // },
+    {
+      "name": "Ustad Ahmed & Mohammad Hussain",
+      "url" : "http://stream.zeno.fm/6u81yk9wyv8uv"
+    },
     {
       "name": "Kishore Kumar",
       "url": "https://node-11.zeno.fm/0ghtfp8ztm0uv.aac"
@@ -69,6 +69,10 @@ export class AppComponent implements OnInit {
     {
       "name": "Lata Mangeshkar",
       "url": "https://node-04.zeno.fm/87xam8pf7tzuv.aac"
+    },
+    {
+      "name": "Hemant Kumar",
+      "url": "http://node-10.zeno.fm/eqz8nh7wyv8uv"
     },
     {
       "name": "Hindi Retro",
