@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <title>Tarana</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="playerjs.js" type="text/javascript" async></script>
+    <script>
+            var urls = ["https://air.pc.cdn.bitgravity.com/air/live/pbaudio001/playlist.m3u8",
+                "https://air.pc.cdn.bitgravity.com/air/live/pbaudio004/playlist.m3u8",
+                "https://air.pc.cdn.bitgravity.com/air/live/pbaudio005/playlist.m3u8",
+                "https://node-19.zeno.fm/2xx62x8ztm0uv.aac",
+                "http://stream.zeno.fm/am1p4qaxyv8uv",
+                "http://stream.zeno.fm/6u81yk9wyv8uv",
+                "https://node-11.zeno.fm/0ghtfp8ztm0uv.aac",
+                "https://node-04.zeno.fm/87xam8pf7tzuv.aac",
+                "http://node-10.zeno.fm/eqz8nh7wyv8uv",
+                "http://192.111.151.2:5124/stream",
+                "http://103.16.47.70:7222/;stream.nsv",
+                "https://radioindia.net/radio/sc-bb/icecast.audio",
+
+            ];
+            var playerArr = {};
+
+        function PlayerjsEvents(event, id, data) {
+            if (event == "play") {
+                // reload()
+
+            }
+            if(event == "pause"){
+                playerArr[id].api("stop");
+            }
+        }
+        function reload(id){
+            PlayerjsAsync();
+            playerArr[id].api("play");
+
+        }
+        function PlayerjsAsync() {
+            for (let i in urls) {
+                playerArr[`player${i}`] = new Playerjs({ id: `player${i}`, file: `${urls[i]}`, autoplay: 0 });
+            }
+            // player = new Playerjs({ id: "player", file: "https://air.pc.cdn.bitgravity.com/air/live/pbaudio001/playlist.m3u8",autoplay:0});
+            // player.api("play","https://air.pc.cdn.bitgravity.com/air/live/pbaudio001/playlist.m3u8");
+            // player.api("play","http://stream.zeno.fm/am1p4qaxyv8uv");
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="/" class="navbar-brand mb-0 h1">Tarana</a>
+        <a href="https://www.linkedin.com/in/ankur-sharma-341446b1/">Contact Me</a>
+    </nav>
+    <br />
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <h6>Vividh Bharti</h6>
+                <div id="player0"></div>
+            </div>
+            <div class="col-md-3">
+                <h6>FM Rainbow</h6>
+                <div id="player1"></div>
+            </div>
+            <div class="col-md-3">
+                <h6>FM Gold</h6>
+                <div id="player2"></div>
+            </div>
+            <div class="col-md-3">
+                <h6>Mohd Rafi</h6>
+                <div id="player3"></div>
+            </div>
+            <div class="col-md-3">
+                <h6>Mukesh</h6>
+                <div id="player4"></div>
+            </div>
+            <div class="col-md-3">
+                <h6>Ustad Ahmed & Mohammad Hussain</h6>
+                <div id="player5"></div>
+            </div>
+            <div class="col-md-3">
+                <h6>Kishore Kumar</h6>
+                <div id="player6"></div>
+            </div>
+            <div class="col-md-3">
+                <h6>Lata Mangeshkar</h6>
+                <div id="player7"></div>
+            </div>
+            <div class="col-md-3">
+                <h6>Hemant Kumar</h6>
+                <div id="player8"></div>
+            </div>
+            <div class="col-md-3">
+                <h6>Hindi Retro</h6>
+                <div id="player9"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+</body>
+
+</html>
