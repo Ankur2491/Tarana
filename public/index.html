@@ -7,32 +7,74 @@
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <script src="playerjs.js" type="text/javascript" async></script>
     <script>
-            var urls = ["https://air.pc.cdn.bitgravity.com/air/live/pbaudio001/playlist.m3u8",
-                "https://air.pc.cdn.bitgravity.com/air/live/pbaudio004/playlist.m3u8",
-                "https://air.pc.cdn.bitgravity.com/air/live/pbaudio005/playlist.m3u8",
-                "https://node-19.zeno.fm/2xx62x8ztm0uv.aac",
-                "http://stream.zeno.fm/am1p4qaxyv8uv",
-                "http://stream.zeno.fm/6u81yk9wyv8uv",
-                "https://node-11.zeno.fm/0ghtfp8ztm0uv.aac",
-                "https://node-04.zeno.fm/87xam8pf7tzuv.aac",
-                "http://node-10.zeno.fm/eqz8nh7wyv8uv",
-                "http://192.111.151.2:5124/stream",
-                "http://103.16.47.70:7222/;stream.nsv",
-                "https://radioindia.net/radio/sc-bb/icecast.audio",
+        var urls = ["https://air.pc.cdn.bitgravity.com/air/live/pbaudio001/playlist.m3u8",
+            "https://air.pc.cdn.bitgravity.com/air/live/pbaudio004/playlist.m3u8",
+            "https://air.pc.cdn.bitgravity.com/air/live/pbaudio005/playlist.m3u8",
+            "https://node-19.zeno.fm/2xx62x8ztm0uv.aac",
+            "http://stream.zeno.fm/am1p4qaxyv8uv",
+            "http://stream.zeno.fm/6u81yk9wyv8uv",
+            "https://node-11.zeno.fm/0ghtfp8ztm0uv.aac",
+            "https://node-04.zeno.fm/87xam8pf7tzuv.aac",
+            "http://node-10.zeno.fm/eqz8nh7wyv8uv",
+            "http://192.111.151.2:5124/stream",
+            "http://103.16.47.70:7222/;stream.nsv",
+            "https://radioindia.net/radio/sc-bb/icecast.audio",
+            "http://103.16.47.70:7222/;stream.nsv",
+            "http://sc-bb.1.fm:8017/",
+            "https://eu1.fastcast4u.com/proxy/dzcwbfih_eu?mp=/1",
+            "https://streaming.radio.co/s3aaa20a5e/listen",
+            "http://peridot.streamguys.com:7150/Mirchi",
+            "http://103.16.47.70:7444/;stream.nsv",
+            "https://prclive4.listenon.in/Ishq",
+            "http://103.16.47.70:7333/;stream.nsv",
+            "http://stream.zenolive.com/cm1fkgbv1ceuv",
+            "https://playerservices.streamtheworld.com/api/livestream-redirect/OLIVE1063.mp3",
+            "https://server4.ujala.nl/stream/2/listen.mp3",
+            "http://peridot.streamguys.com:7150/Mirchi",
+            "http://s2.radio.co/se5e166e2f/listen",
+            "https://stream.zenolive.com/kgfzrtfbaw5tv.aac",
+            "https://astro4.rastream.com/india",
+            "https://stream.radio.co/s2562b6e3a/listen",
+            "https://s2.radio.co/se5e166e2f/listen",
+            "https://ice42.securenetsystems.net/CR90?type=.mp3",
+            "http://64.71.79.181:5124/;stream/1",
+            "https://eapps-cs.herokuapp.com/http://comet.shoutca.st:8437/stream",
+            "http://198.178.123.14:8216/;stream/1",
+            "http://144.217.203.184:8112/;stream/1",
+            "https://prclive4.listenon.in/HipHop",
+            "https://icecast.bkwsu.eu:8443/radiomadhuban.ogg",
+            "https://radioindia.net/radio/hungamapunjabi/icecast.audio",
+            "http://198.178.123.23:7354/;stream/1",
+            "https://stream.zenolive.com/rfpf8qec94zuv.aac",
+            "http://www.desizone.nl:8000/;",
+            "http://prclive1.listenon.in:9960/",
+            "http://stream.zeno.fm/agtp9c146qzuv",
+            "http://stream.zeno.fm/vu6rzanzetzuv",
+            "https://prclive4.listenon.in/Dance",
+            "http://playerservices.streamtheworld.com/api/livestream-redirect/938NOWAAC_SC",
+            "https://streaming.radiostreamlive.com/radionylive_devices",
+            "http://prclive1.listenon.in:8860/",
+            "http://streams.calmradio.com/api/295/128/stream",
+            "https://stream.radio.co/s42e977b6c/listen",
+            "https://usa1.fastcast4u.com/proxy/qrekthei?mp=/;",
+            "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1_mf_p?s=1537811543&e=1537825943&h=8bb6982447152d93034e47cfae54e7d1",
+            "http://ice66.securenetsystems.net/SPRLIVE"
 
-            ];
-            var playerArr = {};
+
+
+        ];
+        var playerArr = {};
 
         function PlayerjsEvents(event, id, data) {
             if (event == "play") {
                 // reload()
 
             }
-            if(event == "pause"){
+            if (event == "pause") {
                 playerArr[id].api("stop");
             }
         }
-        function reload(id){
+        function reload(id) {
             PlayerjsAsync();
             playerArr[id].api("play");
 
@@ -48,7 +90,7 @@
     </script>
 </head>
 
-<body>
+<body style="background-color:	#C0C0C0	;">
     <nav class="navbar navbar-dark bg-dark">
         <a href="/" class="navbar-brand mb-0 h1">Tarana</a>
         <a href="https://www.linkedin.com/in/ankur-sharma-341446b1/">Contact Me</a>
@@ -56,45 +98,201 @@
     <br />
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12">
                 <h6>Vividh Bharti</h6>
                 <div id="player0"></div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12">
                 <h6>FM Rainbow</h6>
                 <div id="player1"></div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12">
                 <h6>FM Gold</h6>
                 <div id="player2"></div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12">
                 <h6>Mohd Rafi</h6>
                 <div id="player3"></div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12">
                 <h6>Mukesh</h6>
                 <div id="player4"></div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12">
                 <h6>Ustad Ahmed & Mohammad Hussain</h6>
                 <div id="player5"></div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12">
                 <h6>Kishore Kumar</h6>
                 <div id="player6"></div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12">
                 <h6>Lata Mangeshkar</h6>
                 <div id="player7"></div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12">
                 <h6>Hemant Kumar</h6>
                 <div id="player8"></div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12">
                 <h6>Hindi Retro</h6>
                 <div id="player9"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Fresh Bollywood</h6>
+                <div id="player10"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Big FM</h6>
+                <div id="player11"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>106.2-Big FM</h6>
+                <div id="player12"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Radio Umang</h6>
+                <div id="player13"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Radio Mirchi</h6>
+                <div id="player14"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Love Guru</h6>
+                <div id="player15"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Bollywood Dil Se</h6>
+                <div id="player16"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>JOSH FM</h6>
+                <div id="player17"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Radio Olive</h6>
+                <div id="player18"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Ujala Radio</h6>
+                <div id="player19"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Mirchi</h6>
+                <div id="player20"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Tune India Radio(Australia)</h6>
+                <div id="player21"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Radio Namkin</h6>
+                <div id="player22"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Desi Bollywood</h6>
+                <div id="player23"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Bolly bop</h6>
+                <div id="player24"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Tune India Radio</h6>
+                <div id="player25"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Radio 90.5</h6>
+                <div id="player26"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Radio Retro</h6>
+                <div id="player27"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Sayaji Fm</h6>
+                <div id="player28"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Non Stop Hindi</h6>
+                <div id="player29"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Shripad Radio</h6>
+                <div id="player30"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Radio City Hip Hop</h6>
+                <div id="player31"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Radio Madhuban</h6>
+                <div id="player32"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Hungama Punjabi</h6>
+                <div id="player33"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Masala Radio</h6>
+                <div id="player34"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Arijit Singh</h6>
+                <div id="player35"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>DesiZone Radio</h6>
+                <div id="player36"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>RadioCity</h6>
+                <div id="player37"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Virgin Radio</h6>
+                <div id="player38"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Fox Fm</h6>
+                <div id="player39"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Radio City Dance</h6>
+                <div id="player40"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>CNA News Radio</h6>
+                <div id="player41"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Radio New York Live</h6>
+                <div id="player42"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Radio City Ghazals</h6>
+                <div id="player43"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Calm Radio</h6>
+                <div id="player44"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>VDESI</h6>
+                <div id="player45"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>FNF Fm</h6>
+                <div id="player46"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>BBC Radio 1</h6>
+                <div id="player47"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>BBC News</h6>
+                <div id="player47"></div>
             </div>
         </div>
     </div>
