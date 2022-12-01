@@ -235,14 +235,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-xs-12">
+            <!-- <div class="col-md-3 col-xs-12">
                 <div class="card">
                     <div class="card-body">
                         <h6 class="card-title">Today Hits (English)</h6>
                         <div id="player16"></div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- <div class="col-md-3 col-xs-12">
                 <h6>106.2-Big FM</h6>
                 <div id="player12"></div>
@@ -395,6 +395,8 @@
         <div class="row">
             <div class="col-md-3 col-xs-12">
                 <div class="card-body">
+                    <input type="text" id="language" placeholder="Enter a language">
+                    <hr/>
                     <button type="button" id="clickme" class="btn btn-primary">Random Play</button>
                 </div>
             </div>
@@ -411,8 +413,10 @@
             // xmlHttp.open( "GET", "https://de1.api.radio-browser.info/json/stations/topclick/5", false ); 
             // xmlHttp.send( null );
             // let resp = xmlHttp.responseText;
-            if(results == null){
-            fetch('https://de1.api.radio-browser.info/json/stations/bylanguage/hindi').then((response) => {
+            let language = document.getElementById('language').value
+            console.log(language);
+            // if(results == null){
+            fetch(`https://de1.api.radio-browser.info/json/stations/bylanguage/${language}`).then((response) => {
                 return response.json();
             })
                 .then((jsonResponse) => {
@@ -432,23 +436,23 @@
                 </div>`
                     new Playerjs({ id: `player17`, file: `${x["url_resolved"]}`, autoplay: 1 });
                 });
-            }
-            else{
-                let index = Math.floor(Math.random() * results.length);
-                    let x = results[index];
-                    let obj = document.getElementById("just");
-                    if (obj != null) {
-                        obj.remove();
-                    }
-                    document.getElementById("dynamicChannels").innerHTML =
-                        `<div id="just" class="card">
-                    <div class="card-body">
-                        <h6 class="card-title">${x["name"]}</h6>
-                        <div id="player17"></div>
-                    </div>
-                </div>`
-                    new Playerjs({ id: `player17`, file: `${x["url_resolved"]}`, autoplay: 1 });
-            }
+            
+            // else{
+            //     let index = Math.floor(Math.random() * results.length);
+            //         let x = results[index];
+            //         let obj = document.getElementById("just");
+            //         if (obj != null) {
+            //             obj.remove();
+            //         }
+            //         document.getElementById("dynamicChannels").innerHTML =
+            //             `<div id="just" class="card">
+            //         <div class="card-body">
+            //             <h6 class="card-title">${x["name"]}</h6>
+            //             <div id="player17"></div>
+            //         </div>
+            //     </div>`
+            //         new Playerjs({ id: `player17`, file: `${x["url_resolved"]}`, autoplay: 1 });
+            // }
         })
     </script>
 </body>
